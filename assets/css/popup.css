@@ -228,6 +228,17 @@
 	font-size: 15px;
 }
 
+.surge-eval__rating-link {
+	color: var(--se-blue);
+	text-decoration: none;
+}
+
+.surge-eval__rating-link:hover,
+.surge-eval__rating-link:focus-visible {
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
 .surge-eval__stars {
 	color: var(--se-accent);
 	font-size: 22px;

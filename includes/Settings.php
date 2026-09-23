@@ -180,6 +180,13 @@ final class Settings {
 				'label'   => __( 'Rating text', 'surge-evaluation-popup' ),
 				'default' => '5-star rated by local homeowners',
 			),
+			'rating_url'         => array(
+				'tab'     => 'content',
+				'type'    => 'text',
+				'label'   => __( 'Rating link', 'surge-evaluation-popup' ),
+				'default' => '/reviews/',
+				'help'    => __( 'Where the rating text links to. A path like /reviews/ or a full URL. Leave empty for plain text.', 'surge-evaluation-popup' ),
+			),
 			'trust_text'         => array(
 				'tab'     => 'content',
 				'type'    => 'text',

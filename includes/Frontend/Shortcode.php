@@ -109,6 +109,12 @@ final class Shortcode {
 		);
 
 		$phone_digits = preg_replace( '/[^\d+]/', '', (string) $s['phone_number'] );
+		$rating_url   = trim( (string) $s['rating_url'] );
+
+		// Relative paths resolve against the site root.
+		if ( '' !== $rating_url && 0 === strpos( $rating_url, '/' ) && 0 !== strpos( $rating_url, '//' ) ) {
+			$rating_url = home_url( $rating_url );
+		}
 
 		ob_start();
 		?>
@@ -171,7 +177,11 @@ final class Shortcode {
 					<?php if ( $s['show_rating'] ) : ?>
 						<div class="surge-eval__rating">
 							<span class="surge-eval__stars" aria-hidden="true">★★★★★</span>
-							<span><?php echo esc_html( $s['rating_text'] ); ?></span>
+							<?php if ( '' !== $rating_url ) : ?>
+								<a class="surge-eval__rating-link" href="<?php echo esc_url( $rating_url ); ?>"><?php echo esc_html( $s['rating_text'] ); ?></a>
+							<?php else : ?>
+								<span><?php echo esc_html( $s['rating_text'] ); ?></span>
+							<?php endif; ?>
 						</div>
 					<?php endif; ?>
 
