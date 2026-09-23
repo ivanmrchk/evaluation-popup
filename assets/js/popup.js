@@ -329,7 +329,7 @@
 	// ---- Auto-open logic ----
 
 	function armTriggers() {
-		if ( ! eligible || suppressed() ) {
+		if ( ! eligible || ( ! testing && suppressed() ) ) {
 			return;
 		}
 		if ( isMobile() && ! config.mobile && ! testing ) {
