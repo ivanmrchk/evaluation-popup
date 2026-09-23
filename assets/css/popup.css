@@ -1,7 +1,7 @@
 /* Surge Evaluation Popup */
 .surge-eval {
-	--se-orange: #f7931e;
-	--se-orange-dark: #f26b1d;
+	--se-accent: #f5a623;
+	--se-accent-dark: #d98c10;
 	--se-navy: #0f1b2d;
 	--se-blue: #1a3fa6;
 	--se-border: #cfd4dc;
@@ -90,8 +90,8 @@
 
 .surge-eval__badge {
 	display: inline-block;
-	background: var(--se-orange-dark);
-	color: #fff;
+	background: var(--se-accent);
+	color: var(--se-navy);
 	font-weight: 700;
 	font-size: 15px;
 	letter-spacing: 0.04em;
@@ -150,8 +150,8 @@
 
 .surge-eval__field input:focus {
 	outline: none;
-	border-color: var(--se-orange);
-	box-shadow: 0 0 0 3px rgba(247, 147, 30, 0.25);
+	border-color: var(--se-accent);
+	box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.3);
 }
 
 .surge-eval__field input[aria-invalid="true"] {
@@ -163,7 +163,7 @@
 	width: 100%;
 	border: 0;
 	border-radius: 6px;
-	background: var(--se-orange);
+	background: var(--se-accent);
 	color: var(--se-navy);
 	font-size: 17px;
 	font-weight: 700;
@@ -175,8 +175,8 @@
 
 .surge-eval__submit:hover,
 .surge-eval__submit:focus-visible {
-	background: var(--se-orange-dark);
-	color: #fff;
+	background: var(--se-accent-dark);
+	color: var(--se-navy);
 }
 
 .surge-eval__submit:active {
@@ -229,7 +229,7 @@
 }
 
 .surge-eval__stars {
-	color: var(--se-orange);
+	color: var(--se-accent);
 	font-size: 22px;
 	letter-spacing: 2px;
 	line-height: 1;

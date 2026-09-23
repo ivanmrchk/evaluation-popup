@@ -124,8 +124,8 @@ final class Shortcode {
 						<div class="surge-eval__icon" aria-hidden="true">
 							<svg viewBox="0 0 64 72" width="56" height="63">
 								<ellipse cx="32" cy="68" rx="18" ry="3.5" fill="#000" opacity=".12"/>
-								<path d="M32 2 6 11v19c0 17 11 29 26 36 15-7 26-19 26-36V11L32 2z" fill="#f26b1d"/>
-								<path d="M32 2 6 11v19c0 17 11 29 26 36V2z" fill="#ff8a3d"/>
+								<path d="M32 2 6 11v19c0 17 11 29 26 36 15-7 26-19 26-36V11L32 2z" fill="#f5a623"/>
+								<path d="M32 2 6 11v19c0 17 11 29 26 36V2z" fill="#f8bd5c"/>
 								<path d="M36 14 22 38h9l-3 18 15-26h-9l2-16z" fill="#fff"/>
 							</svg>
 						</div>

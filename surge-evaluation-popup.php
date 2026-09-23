@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Surge Evaluation Popup
  * Description: Location-aware $99 Electrical Safety Evaluation popup (shortcode) for the Seattle metro area. Sends leads via Mailgun and pushes them to Housecall Pro.
- * Version: 0.1.1
+ * Version: 0.1.2
  * Author: Surge Electrical
  * Text Domain: surge-evaluation-popup
  * Requires PHP: 7.4
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'SURGE_EVAL_POPUP_VERSION', '0.1.1' );
+define( 'SURGE_EVAL_POPUP_VERSION', '0.1.2' );
 define( 'SURGE_EVAL_POPUP_FILE', __FILE__ );
 define( 'SURGE_EVAL_POPUP_PATH', plugin_dir_path( __FILE__ ) );
 
